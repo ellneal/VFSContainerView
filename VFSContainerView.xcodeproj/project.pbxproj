@@ -12,10 +12,11 @@
 		49A5563518CF649500CE1E36 /* VFSContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A5563418CF649500CE1E36 /* VFSContainerView.m */; };
 		49A5563C18CF649500CE1E36 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A5563B18CF649500CE1E36 /* XCTest.framework */; };
 		49A5563D18CF649500CE1E36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A5562D18CF649500CE1E36 /* Foundation.framework */; };
-		49A5563F18CF649500CE1E36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A5563E18CF649500CE1E36 /* UIKit.framework */; };
 		49A5564218CF649500CE1E36 /* libVFSContainerView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A5562A18CF649500CE1E36 /* libVFSContainerView.a */; };
 		49A5564818CF649500CE1E36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49A5564618CF649500CE1E36 /* InfoPlist.strings */; };
 		49A5564A18CF649500CE1E36 /* VFSContainerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A5564918CF649500CE1E36 /* VFSContainerViewTests.m */; };
+		49A5565418CF652800CE1E36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A5565318CF652800CE1E36 /* UIKit.framework */; };
+		49A5565518CF653900CE1E36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A5565318CF652800CE1E36 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,10 +50,10 @@
 		49A5563418CF649500CE1E36 /* VFSContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFSContainerView.m; sourceTree = "<group>"; };
 		49A5563A18CF649500CE1E36 /* VFSContainerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VFSContainerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A5563B18CF649500CE1E36 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		49A5563E18CF649500CE1E36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		49A5564518CF649500CE1E36 /* VFSContainerViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VFSContainerViewTests-Info.plist"; sourceTree = "<group>"; };
 		49A5564718CF649500CE1E36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		49A5564918CF649500CE1E36 /* VFSContainerViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFSContainerViewTests.m; sourceTree = "<group>"; };
+		49A5565318CF652800CE1E36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A5562E18CF649500CE1E36 /* Foundation.framework in Frameworks */,
+				49A5565418CF652800CE1E36 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,10 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49A5564218CF649500CE1E36 /* libVFSContainerView.a in Frameworks */,
-				49A5563C18CF649500CE1E36 /* XCTest.framework in Frameworks */,
-				49A5563F18CF649500CE1E36 /* UIKit.framework in Frameworks */,
 				49A5563D18CF649500CE1E36 /* Foundation.framework in Frameworks */,
+				49A5564218CF649500CE1E36 /* libVFSContainerView.a in Frameworks */,
+				49A5565518CF653900CE1E36 /* UIKit.framework in Frameworks */,
+				49A5563C18CF649500CE1E36 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				49A5562D18CF649500CE1E36 /* Foundation.framework */,
+				49A5565318CF652800CE1E36 /* UIKit.framework */,
 				49A5563B18CF649500CE1E36 /* XCTest.framework */,
-				49A5563E18CF649500CE1E36 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -405,6 +407,7 @@
 				49A5564F18CF649500CE1E36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49A5565018CF649500CE1E36 /* Build configuration list for PBXNativeTarget "VFSContainerViewTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +416,7 @@
 				49A5565218CF649500CE1E36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
