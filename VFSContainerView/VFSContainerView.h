@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 emdentec. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIView.h>
 
-@interface VFSContainerView : NSObject
+@interface VFSContainerView : UIView
 
 @end
