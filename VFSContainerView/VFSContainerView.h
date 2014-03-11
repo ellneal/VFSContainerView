@@ -8,6 +8,10 @@
 
 #import <UIKit/UIView.h>
 
+
 @interface VFSContainerView : UIView
+
+
+@property (assign, nonatomic, getter=isUserInteractionOutsideSubviewsEnabled) BOOL userInteractionOutsideSubviewsEnabled;
 
 @end

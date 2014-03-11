@@ -7,28 +7,41 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <VFSContainerView/VFSContainerView.h>
+
 
 @interface VFSContainerViewTests : XCTestCase
 
+
+@property (strong, nonatomic) VFSContainerView *containerView;
+
 @end
+
 
 @implementation VFSContainerViewTests
 
-- (void)setUp
-{
+- (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    VFSContainerView *containerView = [[VFSContainerView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    [self setContainerView:containerView];
 }
 
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+- (void)tearDown {
     [super tearDown];
+    
+    [self setContainerView:nil];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+- (void)testRespondsToUserInteractionOutsideSubviewsEnabled {
+    
+    VFSContainerView *containerView = [self containerView];
+    
+    SEL getSelector = @selector(isUserInteractionOutsideSubviewsEnabled);
+    SEL setSelector = @selector(setUserInteractionOutsideSubviewsEnabled:);
+    
+    XCTAssert([containerView respondsToSelector:getSelector], @"%s should exist on %@", sel_getName(getSelector), NSStringFromClass([containerView class]));
+    XCTAssert([containerView respondsToSelector:setSelector], @"%s should exist on %@", sel_getName(setSelector), NSStringFromClass([containerView class]));
 }
 
 @end
