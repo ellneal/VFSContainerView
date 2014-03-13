@@ -17,6 +17,8 @@
 		49A5564A18CF649500CE1E36 /* VFSContainerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A5564918CF649500CE1E36 /* VFSContainerViewTests.m */; };
 		49A5565418CF652800CE1E36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A5565318CF652800CE1E36 /* UIKit.framework */; };
 		49A5565518CF653900CE1E36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A5565318CF652800CE1E36 /* UIKit.framework */; };
+		49A5565818D1C88A00CE1E36 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 49A5565618D1C88A00CE1E36 /* LICENSE */; };
+		49A5565918D1C88A00CE1E36 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 49A5565718D1C88A00CE1E36 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		49A5564718CF649500CE1E36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		49A5564918CF649500CE1E36 /* VFSContainerViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFSContainerViewTests.m; sourceTree = "<group>"; };
 		49A5565318CF652800CE1E36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		49A5565618D1C88A00CE1E36 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		49A5565718D1C88A00CE1E36 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				49A5563118CF649500CE1E36 /* VFSContainerView-Prefix.pch */,
+				49A5565618D1C88A00CE1E36 /* LICENSE */,
+				49A5565718D1C88A00CE1E36 /* README.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -215,6 +221,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A5565918D1C88A00CE1E36 /* README.md in Resources */,
+				49A5565818D1C88A00CE1E36 /* LICENSE in Resources */,
 				49A5564818CF649500CE1E36 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
